@@ -22,7 +22,7 @@ const Register = () => {
   return (
     <div className="register">
       <Logo title={"CryptoDucks"} />
-      <p className="register__welcome">Please sign up</p>
+      <p className="register__welcome">Please register.</p>
       <form className="register__form">
         <label htmlFor="username">Username:</label>
         <input
@@ -58,14 +58,14 @@ const Register = () => {
         />
         <div className="register__button-container">
           <button type="submit" className="register__link">
-            Register
+            Sign up
           </button>
         </div>
       </form>
       <div className="register__signin">
-        <p>Have an account?</p>
+        <p>Already a member?</p>
         <Link to="login" className="register__login-link">
-          Log in
+          Log in here
         </Link>
       </div>
     </div>
