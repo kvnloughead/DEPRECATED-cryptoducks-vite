@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import { Navigate } from "react-router-dom";
 
-function ProtectedRoute({ isLoggedIn, children }) {
+import AppContext from "../contexts/AppContext.js";
+
+function ProtectedRoute({ children }) {
+  const { isLoggedIn } = useContext(AppContext);
   if (!isLoggedIn) {
     return <Navigate to="/login" replace />;
   }
